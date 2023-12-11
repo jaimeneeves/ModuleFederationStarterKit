@@ -1,3 +1,3 @@
 import('App1/Module').then(({Avatar}) => {
-  Avatar(document.querySelector(`#avatar`))
+  Avatar(document.querySelector(`#person`))
 });

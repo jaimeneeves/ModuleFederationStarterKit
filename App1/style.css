@@ -51,3 +51,30 @@ body {
   font-weight: 400;
   line-height: normal;
 }
+
+/* Actions */
+.actions {
+  display: flex;
+  overflow: hidden;
+  padding: 15px 0px 20px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+
+.actions div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+
+  border-radius: 50%;
+  background-color: #F2F7FC;
+}
+
+.actions div img {
+  width: 26px;
+  height: 26px;
+}

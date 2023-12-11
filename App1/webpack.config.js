@@ -22,6 +22,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/i, // Regex para identificar arquivos .html
+        use: ['html-loader'],
+      },
+      {
         test: /\.css$/i, // Regex para identificar arquivos .css
         use: ['style-loader', 'css-loader'], // Loaders para processar CSS
       },
