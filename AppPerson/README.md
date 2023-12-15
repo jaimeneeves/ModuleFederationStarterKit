@@ -1,14 +1,4 @@
-# App1
-
-## Instalando o devServer
-
-## Instalando o HtmlWebpackPlugin
-
-## Instalando o html-loader
-
-```sh
-$ npm install --save-dev html-loader
-```
+# App Person
 
 ## Adicionar Fonte Roboto
 
