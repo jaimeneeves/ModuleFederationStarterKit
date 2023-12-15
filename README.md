@@ -1,12 +1,16 @@
 # Vanilla Module Federation Base
 
-> Micro-frontends Com Module Federation
+> Micro-frontends com Module Federation
 
 Este repositório serve como uma base para implementar a arquitetura de Module Federation em aplicações JavaScript puras, sem depender de frameworks específicos. É uma ótima maneira de começar a trabalhar com micro-frontends e entender como o Module Federation funciona em um ambiente simplificado.
 
 ## Sobre o Projeto
 
 Module Federation é um recurso poderoso do Webpack que permite a uma aplicação JavaScript carregar dinamicamente módulos de outra aplicação em tempo de execução. Este projeto demonstra como configurar o Module Federation em um ambiente sem frameworks, facilitando a integração entre diferentes aplicações ou componentes de frontend.
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter o Node.js e o NPM instalados em sua máquina. Essas ferramentas são necessárias para instalar as dependências e executar os projetos.
 
 ## Instalação de Libs Básicas
 
