@@ -12,6 +12,7 @@ module.exports = {
       remotes: {
         App1: 'App1@http://localhost:3001/remoteEntry.js',
         AppA: 'AppA@http://localhost:3002/remoteEntry.js',
+        AppL: 'AppL@http://localhost:3003/remoteEntry.js',
       },
     }),
     new HtmlWebpackPlugin({

@@ -1,0 +1,104 @@
+:root {
+
+  /* Colors */
+  --color-primary: #9747FF;
+  --color-secondary: #F2F7FC;
+  --color-base-1: #999999;
+
+
+  /* Border Radius */
+  --radius-default: 15px;
+  --radius-xlg: 50px;
+
+  /* Shadow */
+  --shadow-sm: 0px 1px 0px 0px rgba(0, 0, 0, 0.10);
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.app-list {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.list-item {
+  background: var(--color-secondary);
+  display: flex;
+  padding: 15px 20px;
+  border-radius: var(--radius-default);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.list--avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-xlg);
+}
+
+.list--contact {
+  width: 216px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 12px;
+  text-align: left;
+}
+
+.list--contact .contact-name {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.42px;
+}
+
+.list--contact .contact-username {
+  color: var(--color-base-1);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.list--contact-detail img {
+  width: 22px;
+  height: 22px;
+}
+
+.list-item.new {
+  border-radius: var(--radius-default);
+  border: 1px dashed var(--color-primary);
+  background: #FFF;
+}
+
+.list-item.new .list--avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-primary);
+  border-radius: var(--radius-xlg);
+  border: 2px solid var(--color-primary);
+  width: 40px;
+  height: 40px;
+}
+
+.list-item.new .list--avatar img {
+  width: 18px;
+  height: 18px;
+}
+.list-item.new .list--contact-detail {
+  visibility: hidden;
+}

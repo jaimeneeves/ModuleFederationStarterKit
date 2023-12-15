@@ -5,3 +5,7 @@ import('App1/Module').then(({AppPerson}) => {
 import('AppA/Module').then(({AppActions}) => {
   AppActions(document.querySelector(`#content-actions`))
 });
+
+import('AppL/Module').then(({AppList}) => {
+  AppList(document.querySelector(`#content-list`))
+});
