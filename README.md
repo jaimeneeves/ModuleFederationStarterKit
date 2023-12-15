@@ -19,7 +19,7 @@ npm init -y
 npm install webpack webpack-cli webpack-dev-server html-webpack-plugin --save-dev
 ```
 
-## Configuração Básica do Arquivo webpack.config.js Sem Module Federation.
+## Configuração Básica do `webpack.config.js` sem Module Federation.
 
 ```js
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -27,13 +27,13 @@ const { ModuleFederationPlugin } = require("webpack").container;
 
 module.exports = {
   entry: './index.js',
-  mode: 'development', // Define o modo para desenvolvimento (permite melhor debug)
+  mode: 'development',
   devServer: {
-    port: 3000 // Porta em que o servidor irá rodar
+    port: 3000
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html' // O template do HTML para ser usado
+      template: 'index.html'
     })
   ]
 };
@@ -49,7 +49,7 @@ Explicação:
 
 * `plugins`: Neste caso, usamos o `HtmlWebpackPlugin` que simplifica a criação de arquivos HTML para servir os bundles do Webpack.
 
-## Configuração Básica do Arquivo webpack.config.js Com Module Federation.
+## Configuração Básica do `webpack.config.js` com Module Federation.
 
 ```js
 const path = require('path');
@@ -61,14 +61,14 @@ module.exports = {
   mode: 'development',
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    port: 3000, // Porta em que o servidor irá rodar
+    port: 3000,
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html', // O template do HTML para ser usado
     }),
     new ModuleFederationPlugin({
-      name: 'App1', // Nome do App
+      name: 'App1',
       filename: 'remoteEntry.js',
       exposes: {
         './Module': './index.js',
