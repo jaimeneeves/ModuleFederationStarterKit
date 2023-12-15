@@ -2,6 +2,11 @@
 
 > Micro-frontends com Module Federation
 
+<p align="center">
+  <img src="https://github.com/jaimeneeves/ModuleFederationStarterKit/assets/6599252/c89af49f-229d-4693-bf4f-2019f9e0500d" alt="Checkforce logo" >
+</p>
+
+
 Este repositório serve como uma base para implementar a arquitetura de Module Federation em aplicações JavaScript puras, sem depender de frameworks específicos. É uma ótima maneira de começar a trabalhar com micro-frontends e entender como o Module Federation funciona em um ambiente simplificado.
 
 ## Sobre o Projeto
@@ -52,6 +57,6 @@ npm start
 
 Isso iniciará o servidor de desenvolvimento e abrirá a aplicação no navegador.
 
-# Contribuições
+## Contribuições
 
 Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir issues, enviar pull requests e propor melhorias.
