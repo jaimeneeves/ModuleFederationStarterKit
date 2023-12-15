@@ -1,9 +1,9 @@
 import './style.css';
 import PersonHTML from './person.html';
 
-export const Avatar = (element) => {
+export const Person = (element) => {
   element.innerHTML = PersonHTML;
   return element;
 }
 
-Avatar(document.querySelector(`#person`));
+Person(document.querySelector(`#person`));

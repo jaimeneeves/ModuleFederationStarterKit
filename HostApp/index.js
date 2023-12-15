@@ -1,3 +1,3 @@
-import('App1/Module').then(({Avatar}) => {
-  Avatar(document.querySelector(`#person`))
+import('App1/Module').then(({Person}) => {
+  Person(document.querySelector(`#person`))
 });
