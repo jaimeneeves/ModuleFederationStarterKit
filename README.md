@@ -58,5 +58,39 @@ module.exports = {
     }),
   ]
 };
+```
 
+## Aceitar Arquivos CSS
+
+```sh
+$ npm install --save-dev style-loader css-loader
+```
+
+```js
+module: {
+  rules: [
+    {
+      test: /\.css$/i,
+      use: ['style-loader', 'css-loader'],
+    },
+  ],
+},
+```
+
+## Exportando o App com Module Federation
+
+`ModuleFederationPlugin`: Configura este projeto para expor partes de si mesmo como módulos federados.
+
+```js
+plugins: [
+  new ModuleFederationPlugin({
+    name: 'AppActions', // Nome do App
+    filename: 'remoteEntry.js',
+    exposes: {
+      './Module': './index.js', // Arquivo que será exportado
+    },
+    // Optional: Compartilhar dependências do arquivo package.json
+    shared: require('./package.json').dependencies,
+  }),
+],
 ```

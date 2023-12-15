@@ -29,6 +29,8 @@ module.exports = {
         test: /\.css$/i, // Regex para identificar arquivos .css
         use: ['style-loader', 'css-loader'], // Loaders para processar CSS
       },
+      
+      // Aceitar Imagens
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i, // Regex para identificar arquivos de imagens
         type: 'asset/resource',

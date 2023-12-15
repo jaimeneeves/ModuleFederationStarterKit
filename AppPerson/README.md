@@ -4,12 +4,6 @@
 
 ## Instalando o HtmlWebpackPlugin
 
-## Importando Arquivo CSS
-
-```sh
-$ npm install --save-dev style-loader css-loader
-```
-
 ## Instalando o html-loader
 
 ```sh

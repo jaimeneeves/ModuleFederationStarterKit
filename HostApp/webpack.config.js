@@ -11,6 +11,7 @@ module.exports = {
     new ModuleFederationPlugin({
       remotes: {
         App1: 'App1@http://localhost:3001/remoteEntry.js',
+        AppA: 'AppA@http://localhost:3002/remoteEntry.js',
       },
     }),
     new HtmlWebpackPlugin({
